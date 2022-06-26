@@ -5,7 +5,7 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 Balance_of_wallet = 10000
-Category_products = 200
+Category_products = 0
 
 @dp.message_handler()
 async def echo0(message : types.Message):
