@@ -3,7 +3,7 @@ import sqlite3
 base = sqlite3.connect('new.db')  # base - это экземпляр класса connection, создаем файл базы данных, файл "new.db"
 cur = base.cursor()   # cur будет записывать и читать данные из БД
 
-base.execute('CREATE TABLE IF NOT EXISTS {}(категория PRIMARY KEY, размер трат)'.format('data')) # PRIMARY KEY - фильтрует столбец "login" чтобы были уник.значения
+base.execute('CREATE TABLE IF NOT EXISTS {}(продукты PRIMARY KEY)'.format('data')) # PRIMARY KEY - фильтрует столбец "login" чтобы были уник.значения
 #base.execute('CREATE TABLE IF NOT EXISTS {}(login PRIMARY KEY, password)'.format('data'))
 # создаем таблицу, data - название таблицы, "login" и "password" - создаем столбцы в табле
 # IF NOT EXIST - прописываем, чтобы при повторном запуске не было ошибки "table data already exists"
