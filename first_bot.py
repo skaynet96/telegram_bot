@@ -1,6 +1,6 @@
 import re
 from aiogram import Bot, types, Dispatcher,executor  # Bot - отвечает за работу с API, #Dispatcher - обработчик событий
-TOKEN = '5391699889:AAGKa_176LAvBA948Cn_Bztksv8-Hxw5cs8'
+TOKEN = '#88'
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
